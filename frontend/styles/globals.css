@@ -784,6 +784,10 @@ video {
 .italic {
 	font-style: italic;
 }
+.text-gray-600 {
+	--tw-text-opacity: 1;
+	color: rgba(75, 85, 99, var(--tw-text-opacity));
+}
 .text-indigo-600 {
 	--tw-text-opacity: 1;
 	color: rgba(79, 70, 229, var(--tw-text-opacity));
@@ -819,10 +823,6 @@ video {
 .text-yellow-400 {
 	--tw-text-opacity: 1;
 	color: rgba(251, 191, 36, var(--tw-text-opacity));
-}
-.text-gray-600 {
-	--tw-text-opacity: 1;
-	color: rgba(75, 85, 99, var(--tw-text-opacity));
 }
 .placeholder-gray-400::-moz-placeholder {
 	--tw-placeholder-opacity: 1;
@@ -877,15 +877,6 @@ video {
 	}
 
 	.sm\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
-		--tw-space-x-reverse: 0;
-		margin-right: calc(3rem * var(--tw-space-x-reverse));
-		margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
-	}
-}
-
-@media (min-width: 768px) {
-
-	.md\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
 		--tw-space-x-reverse: 0;
 		margin-right: calc(3rem * var(--tw-space-x-reverse));
 		margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));

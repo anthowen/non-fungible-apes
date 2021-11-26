@@ -8,9 +8,9 @@
     "lint": "next lint",
     "css:dev": "TAILWIND_MODE=watch postcss ./styles/tailwind.css -o ./styles/globals.css --watch",
     "css:build": "postcss ./styles/tailwind.css -o ./styles/globals.css",
-    "tailwind-storybook": "postcss ./styles/tailwind.css -o ./public/storybook/tailwind.storybook.css",
-    "tailwind-storybook:dev": "TAILWIND_MODE=watch postcss ./styles/tailwind.css -o ./public/storybook/tailwind.storybook.css",
-    "tailwind-storybook-build": "NODE_ENV=production postcss ./styles/tailwind.css -o ./storybook-static/storybook/tailwind.storybook.css",
+    "tailwind-storybook": "postcss ./styles/tailwind.css -o ./public/non-fungible-apes/tailwind.storybook.css",
+    "tailwind-storybook:dev": "TAILWIND_MODE=watch postcss ./styles/tailwind.css -o ./public/non-fungible-apes/tailwind.storybook.css",
+    "tailwind-storybook-build": "NODE_ENV=production postcss ./styles/tailwind.css -o ./storybook-static/non-fungible-apes/tailwind.storybook.css",
     "storybook": "yarn run tailwind-storybook && start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public -o design-system && yarn run tailwind-storybook-build"
   },

@@ -16,7 +16,7 @@ Read: https://non-fungible-apes.vercel.app/about
 
   https://non-fungible-apes.vercel.app/
   
-  Storybook was deployed to GitHub page: https://github.com/anthowen/non-fungible-apes
+  Storybook was deployed to GitHub page: https://anthowen.github.io/non-fungible-apes/
   
 
   **TODOs**:
