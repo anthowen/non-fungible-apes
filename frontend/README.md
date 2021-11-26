@@ -6,7 +6,7 @@ The website is deployed on Vercel: https://non-fungible-apes.vercel.app/. (CI in
 
 The storybook preview is deployed on GitHub pages: https://anthowen.github.io/non-fungible-apes/. (CI integrated)
 
-The app is running on Binance Smart Chain testnet, so make sure you have TBNB in your metamask wallet. Get it [here](https://testnet.binance.org/faucet-smart) if you don't have.
+The app is running on Binance Smart Chain testnet, so make sure you have TBNB in your MetaMask wallet. Get it [here](https://testnet.binance.org/faucet-smart). If you don't have BSC testnet added to your MetaMask, use https://chainlist.org/. (Search for BSC testnet, and then add to your MetaMask)
 
 
 ### Pages
