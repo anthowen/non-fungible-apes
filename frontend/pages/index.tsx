@@ -1,9 +1,9 @@
-import Message from 'components/Message/Message'
-import NFTBox from 'components/NFTBox/NFTBox'
-import useAccountNFTs from 'hooks/useAccountNFTs'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import Message from '../components/Message/Message'
+import NFTBox from '../components/NFTBox/NFTBox'
+import useAccountNFTs from '../hooks/useAccountNFTs'
 
 const Home: NextPage = () => {
   const { isConnected, tokenMetadatas } = useAccountNFTs()
