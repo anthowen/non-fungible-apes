@@ -1,34 +1,68 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Intro
 
-First, run the development server:
+The website is deployed on Vercel: https://non-fungible-apes.vercel.app/. (CI integrated)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The storybook preview is deployed on GitHub pages: https://anthowen.github.io/non-fungible-apes/. (CI integrated)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app is running on Binance Smart Chain testnet, so make sure you have TBNB in your metamask wallet. Get it [here](https://testnet.binance.org/faucet-smart) if you don't have.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Pages
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Home page
 
-## Learn More
+  On this page, once you connect your wallet, it will preview the **ReNFA** NFTs you owned in a nice UI.
+  
+  <img width="1240" alt="CleanShot 2021-11-26 at 12 34 46@2x" src="https://user-images.githubusercontent.com/48500079/143615841-939e70e0-ad22-43d0-a76d-4e0ecd336243.png">
+  
+- Mint page
+  
+  On this page, you should be able to mint the token that's yet avaiable to claim. Once the transaction is successful, go to the home page to check you got the NFT you requested.
+  
+- About page
 
-To learn more about Next.js, take a look at the following resources:
+  <img width="1214" alt="CleanShot 2021-11-26 at 12 40 21@2x" src="https://user-images.githubusercontent.com/48500079/143616179-49724a23-e59e-4940-af70-b1feb645efe0.png">
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Tech stack
 
-## Deploy on Vercel
+- Next.js
+- TypeScript
+- Tailwindcss
+- Storybook
+- UseDApp
+- ethers.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## How to run
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Development
+
+  On the terminal, run
+  
+  ```bash
+  yarn css:dev
+  ```
+  
+  to enable JIT preview for tailwindcss.
+  
+  On the other terminal, run
+  
+  ```bash
+  yarn dev
+  ```
+  
+  then, the site should be running on localhost:3000
+  
+  For storybook preview, run
+  ```bash
+  yarn storybook
+  ```
+  
+- Deploy
+
+  ```bash
+  yarn build
+  ```
+  
