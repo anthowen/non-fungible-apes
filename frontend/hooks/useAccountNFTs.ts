@@ -8,12 +8,12 @@ export default function useAccountNFTs() {
   const indexes = new Array(balance?.toNumber()).fill(0).map((_, i) => i)
 
   const tokenIds = useContractCalls(
-    indexes.map((i) => ({
+    account ? indexes.map((i) => ({
       abi: reNFAInterface,
       address: CA,
       method: 'tokenOfOwnerByIndex',
       args: [account, i],
-    }))
+    })) : [],
   )
 
   let tokenIdNumbers: number[] = []
@@ -49,6 +49,7 @@ export default function useAccountNFTs() {
   })
 
   return {
+    isConnected: !!account,
     tokenURIs,
     tokenIds,
     tokenMetadatas,

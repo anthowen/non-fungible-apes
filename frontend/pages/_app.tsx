@@ -1,11 +1,5 @@
 import '../styles/globals.css'
-import {
-  ChainId,
-  DAppProvider,
-  useEtherBalance,
-  useEthers,
-  Config,
-} from '@usedapp/core'
+import { ChainId, DAppProvider, Config } from '@usedapp/core'
 import type { AppProps } from 'next/app'
 import Layout from '../containers/Layout'
 

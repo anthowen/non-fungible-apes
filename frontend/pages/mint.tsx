@@ -1,14 +1,15 @@
 import React from 'react'
-import MintBox from 'containers/MintBox'
+import { useContractFunction, useEthers } from '@usedapp/core'
+import { Contract } from 'ethers'
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 
 import { reNFAInterface } from '../contracts/interfaces'
 import { ReNonFungibleApes as CA } from '../contracts/address.json'
-import { useContractFunction, useEthers } from '@usedapp/core'
-import { Contract } from 'ethers'
+import MintBox from '../containers/MintBox'
 import Message from '../components/Message'
-import Spinner from 'components/Spinner/Spinner'
+import Spinner from '../components/Spinner/Spinner'
 
 const MintPage: NextPage = () => {
   const { account, library } = useEthers()
@@ -30,6 +31,8 @@ const MintPage: NextPage = () => {
     await sendClaim(id)
   }
 
+  console.log({stateClaim})
+
   return (
     <div className="block">
       <Head>
@@ -49,9 +52,22 @@ const MintPage: NextPage = () => {
               <Spinner className="text-indigo-600" />
             </>
           ) : stateClaim.status === 'Success' ? (
-            <Message type="success" text="Successfully minted" />
+            <div className="flex items-center justify-center space-x-8">
+              <Message type="success" text="Successfully minted" />
+              <Link href="/">
+                <a className="text-gray-600 hover:underline">Check here</a>
+              </Link>
+            </div>
           ) : stateClaim.status === 'Fail' ? (
-            <Message  type="error" text="There was an error during the transaction" />
+            <Message
+              type="error"
+              text="There was an error during the transaction"
+            />
+          ) : stateClaim.status === 'Exception' ? (
+            <Message
+              type="error"
+              text={stateClaim.errorMessage}
+            />
           ) : null}
         </div>
       </div>

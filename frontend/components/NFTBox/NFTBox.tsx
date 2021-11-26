@@ -29,7 +29,7 @@ interface Props {
 
 function NFTBox({ className, description, image, name, width, height }: Props) {
   return (
-    <div className={`flex items-center space-y-12 md:space-x-12 mx-auto flex-col sm:flex-row ${className || ''}`}>
+    <div className={`flex items-center space-y-12 sm:space-x-12 mx-auto flex-col sm:flex-row ${className || ''}`}>
       <div className="block shadow-md">
         <Image src={image} alt={name} width={width} height={height} />
       </div>

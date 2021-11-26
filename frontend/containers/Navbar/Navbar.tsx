@@ -30,7 +30,8 @@ function Navbar({ address, onDisconnect, onConnect }: Props) {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="flex items-center space-x-6">
+        <span className="italic text-yellow-400">BSC Testnet</span>
         {address ? (
           <Button onClick={onDisconnect}>
             {shortenWalletAddress(address)}
