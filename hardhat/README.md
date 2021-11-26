@@ -32,6 +32,13 @@ npm run deploy
 
 ---
 
+### Contract addresses
+
+Testnet: [`0xA20fbd8d87964f7c7008B3D3b3Df7D64bb5e4202`](https://testnet.bscscan.com/address/0xA20fbd8d87964f7c7008B3D3b3Df7D64bb5e4202#code)
+
+
+
+
 #### Start Hardhat test
 
 ---

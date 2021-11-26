@@ -8,7 +8,7 @@
 		"generate-types": "npx hardhat typechain",
 		"typecheck": "tsc --noEmit",
 		"deploy": "npx hardhat run scripts/deploy.ts"
-	  },
+	},
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
