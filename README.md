@@ -18,3 +18,9 @@ Read: https://non-fungible-apes.vercel.app/about
   
   Storybook was deployed to GitHub page: https://github.com/anthowen/non-fungible-apes
   
+
+  **TODOs**:
+  
+  - [ ] Show the list of available token ids
+  - [ ] Show traits, frequency and rarity for each NFT
+  - [ ] ...
