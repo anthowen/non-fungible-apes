@@ -20,7 +20,7 @@ function Button({ primary = false, disabled, className, ...props }: Props) {
       type="button"
       className={`${baseClass} ${
         primary
-          ? "bg-indigo-500 text-white"
+          ? "bg-indigo-500 text-white border border-indigo-500"
           : "text-indigo-500 bg-white border-indigo-700 border"
       } ${className || ""}`}
       disabled={disabled}
