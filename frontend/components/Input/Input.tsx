@@ -17,7 +17,7 @@ function Input({ className, suffix, children, ...pass }: Props) {
         {...pass}
       />
 
-      {suffix ? <span className="text-gray-900 ">{suffix}</span> : null}
+      {suffix ? <span className="font-bold text-gray-900">{suffix}</span> : null}
     </div>
   )
 }
