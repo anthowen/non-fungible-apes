@@ -1,4 +1,4 @@
-## Hardhat Template for TypeScript and Integration Full-Stack
+## ReNonFungibleApes contract
 
 Before to Start
 
