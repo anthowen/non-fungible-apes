@@ -9,7 +9,8 @@ Read: https://non-fungible-apes.vercel.app/about
 
 - Contract
   
-  https://testnet.bscscan.com/address/0xA20fbd8d87964f7c7008B3D3b3Df7D64bb5e4202#code
+  Proudly built with Hardhat. 
+  Available on Bscscan: https://testnet.bscscan.com/address/0xA20fbd8d87964f7c7008B3D3b3Df7D64bb5e4202#code
   
 - UI
 
@@ -17,4 +18,3 @@ Read: https://non-fungible-apes.vercel.app/about
   
   Storybook was deployed to GitHub page: https://github.com/anthowen/non-fungible-apes
   
- 
