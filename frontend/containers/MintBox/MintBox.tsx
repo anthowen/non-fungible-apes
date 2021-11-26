@@ -8,18 +8,19 @@ interface Props {
 }
 
 function MintBox({ onMintClick, className }: Props) {
-  const [tokenId, setTokenId] = React.useState(0);
+  const [tokenId, setTokenId] = React.useState<number | undefined>(undefined);
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTokenId(parseInt(e.target.value));
   };
 
   const handleMintClick = () => {
-    onMintClick && onMintClick(tokenId);
+    if (tokenId && onMintClick)
+      onMintClick(tokenId);
   }
 
   return (
     <div className={`flex items-center space-x-4 ${className || ''}`}>
-      <Input type="number" className="flex-1" value={tokenId} onChange={handleInputChange} />
+      <Input type="number" className="flex-1" value={tokenId} onChange={handleInputChange} placeholder="Token id" />
       <Button primary onClick={handleMintClick}>Mint</Button>
     </div>
   )

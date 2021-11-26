@@ -18,7 +18,7 @@ interface Props {
 function Message({ type = 'normal', className, text }: Props) {
   return (
     <p
-      className={`${
+      className={`text-xl ${
         type === 'success'
           ? 'text-green-500'
           : type === 'error'

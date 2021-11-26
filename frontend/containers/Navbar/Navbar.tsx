@@ -13,14 +13,19 @@ function Navbar({ address, onDisconnect, onConnect }: Props) {
     <div className="flex justify-between px-[48px] py-[20px] items-center fixed top-0 w-full shadow">
       <div className="flex items-center">
         <Link href="/" passHref>
-          <span className="mx-3 text-2xl font-semibold cursor-pointer">
+          <span className="mx-3 text-3xl font-semibold cursor-pointer">
             ReNFA
           </span>
         </Link>
-        <ul className="ml-6">
+        <ul className="flex ml-6 space-x-6">
           <li>
             <Link href="/mint">
               <a>Mint</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <a>About</a>
             </Link>
           </li>
         </ul>
