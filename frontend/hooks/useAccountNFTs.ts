@@ -1,6 +1,4 @@
 import { useContractCalls, useEthers, useTokenBalance } from '@usedapp/core'
-// import { ReNonFungibleApesFactory } from './../../hardhat/typechain';
-
 import { reNFAInterface } from '../contracts/interfaces'
 import { ReNonFungibleApes as CA } from '../contracts/address.json'
 
