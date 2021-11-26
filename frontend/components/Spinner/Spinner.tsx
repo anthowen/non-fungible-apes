@@ -1,6 +1,6 @@
 interface Props {
   /**
-   * Is this the principal call to action on the page?
+   * Show or hide the spinner
    */
   show?: boolean
   /**

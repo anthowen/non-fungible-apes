@@ -9,7 +9,7 @@ export default {
   component: Spinner,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    show: { control: 'switch' },
+    show: { control: 'boolean', defaultValue: true },
   },
 } as ComponentMeta<typeof Spinner>
 

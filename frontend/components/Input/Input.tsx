@@ -1,6 +1,5 @@
 
 interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
-  className?: string;
   suffix?: React.ReactNode;
 }
 

@@ -8,7 +8,11 @@ export default {
   title: 'Components/Input',
   component: Input,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {},
+  argTypes: {
+    suffix: {
+      control: 'text',
+    }
+  },
 } as ComponentMeta<typeof Input>
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args

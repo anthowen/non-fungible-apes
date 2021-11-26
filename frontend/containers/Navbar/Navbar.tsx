@@ -3,8 +3,17 @@ import Link from 'next/link'
 import { shortenWalletAddress } from '../../utils/string'
 
 interface Props {
+  /**
+   * Address of the connected wallet
+   */
   address?: string | null
+  /**
+   * Callback to be called when the disconnect button is called
+   */
   onDisconnect?: () => void
+  /**
+   * Callback to be called when the connect button is called
+   */
   onConnect?: () => void
 }
 

@@ -9,8 +9,6 @@ export default {
   component: Message,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    primary: { control: 'switch' },
-    disabled: { control: 'switch' },
   },
 } as ComponentMeta<typeof Message>
 

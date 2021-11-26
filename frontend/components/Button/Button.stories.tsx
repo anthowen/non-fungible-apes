@@ -9,8 +9,8 @@ export default {
   component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    primary: { control: 'switch' },
-    disabled: { control: 'switch' },
+    primary: { control: 'boolean', defaultValue: false },
+    disabled: { control: 'boolean', defaultValue: false },
   },
 } as ComponentMeta<typeof Button>
 

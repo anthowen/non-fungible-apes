@@ -44,7 +44,7 @@ const MintPage: NextPage = () => {
       </Head>
 
       <div className="flex flex-col items-center justify-center w-10/12 mx-auto">
-        <MintBox className="mx-auto" onMintClick={handleMint} />
+        <MintBox className="mx-auto" onMint={handleMint} />
         <div className="flex items-center mt-10 space-x-4">
           {stateClaim.status === 'Mining' ? (
             <>

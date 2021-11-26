@@ -8,9 +8,7 @@ export default {
   title: 'Components/NFTBox',
   component: NFTBox,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    show: { control: 'switch' },
-  },
+  argTypes: { },
 } as ComponentMeta<typeof NFTBox>
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
