@@ -1,5 +1,5 @@
 import { utils } from 'ethers'
-import ReNFAAbi from '../../hardhat/artifacts/contracts/ReNonFungibleApes.sol/ReNonFungibleApes.json'
+import ReNFAAbi from './abis/ReNonFungibleApes.json'
 
 const { Interface } = utils
 
