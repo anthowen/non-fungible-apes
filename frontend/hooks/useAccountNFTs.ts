@@ -37,6 +37,7 @@ export default function useAccountNFTs() {
     }))
   )
 
+  // tokenURI is a base64 encoded string of the token metadata, which includes the name, descriptiona and the on-chain SVG image
   const tokenMetadatas = tokenURIs.map((uri) => {
     if (!uri) return null
 
