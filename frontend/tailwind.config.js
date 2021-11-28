@@ -1,6 +1,17 @@
+const mdx = require('@mdx-js/mdx')
+
 module.exports = {
-  mode: "jit",
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}", "./containers/**/*.{js,ts,jsx,tsx}"],
+  mode: 'jit',
+  purge: {
+    content: [
+      './pages/**/*.{js,ts,jsx,tsx,mdx}',
+      './components/**/*.{js,ts,jsx,tsx}',
+      './containers/**/*.{js,ts,jsx,tsx}',
+    ],
+    transform: {
+      mdx: (content) => mdx.sync(content),
+    },
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -8,5 +19,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
-};
+  plugins: [require('@tailwindcss/typography')],
+}
