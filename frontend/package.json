@@ -9,11 +9,8 @@
     "test": "jest",
     "css:dev": "TAILWIND_MODE=watch postcss ./styles/tailwind.css -o ./styles/globals.css --watch",
     "css:build": "postcss ./styles/tailwind.css -o ./styles/globals.css",
-    "tailwind-storybook": "postcss ./styles/tailwind.css -o ./public/non-fungible-apes/tailwind.storybook.css",
-    "tailwind-storybook:dev": "TAILWIND_MODE=watch postcss ./styles/tailwind.css -o ./public/non-fungible-apes/tailwind.storybook.css",
-    "tailwind-storybook-build": "NODE_ENV=production postcss ./styles/tailwind.css -o ./storybook-static/non-fungible-apes/tailwind.storybook.css",
-    "storybook": "yarn run tailwind-storybook && start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public -o design-system && yarn run tailwind-storybook-build"
+    "storybook": "start-storybook -s ./public -p 6006",
+    "build-storybook": "build-storybook -s ./public -o design-system"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
@@ -32,6 +29,7 @@
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-links": "^6.3.12",
+    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/addon-storyshots": "^6.4.0",
     "@storybook/react": "^6.3.12",
     "@testing-library/dom": "^8.11.1",

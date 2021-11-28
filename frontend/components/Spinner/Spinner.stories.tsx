@@ -20,5 +20,5 @@ export const Normal = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Normal.args = {
   show: true,
-  className: 'text-blue'
+  className: 'text-indigo-500'
 }
