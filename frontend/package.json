@@ -43,6 +43,7 @@
     "babel-loader": "^8.2.3",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^27.3.1",
     "jest-dom": "^4.0.0",
     "postcss": "^8.4.1",

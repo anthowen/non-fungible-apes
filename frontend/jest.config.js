@@ -1,7 +1,9 @@
 module.exports = {
+  moduleNameMapper: { '\\.css$': 'identity-obj-proxy' },
   testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
   setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
   transform: {
-      '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
+    '^.+\\.stories\\.tsx?$': '@storybook/addon-storyshots/injectFileName',
+    '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
   },
-};
+}
